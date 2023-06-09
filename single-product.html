@@ -22,10 +22,11 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top" >
-      <div class="container" style="background-color: red;">
+    <nav class="navbar navbar-expand-lg bg-white py-3 fixed-top">
+      <div class="container">
         <a href="#" class="nav-logo-name">LACH</a>
         <button
           class="navbar-toggler"
@@ -64,24 +65,36 @@
     </nav>
     <!-- Navbar end -->
     <!--product start-->
-    <section class="single-product mt-5 pt-5">
+    <section id="related-product" class="container-fluid single-product mt-3 pt-5">
       <div class="row mt-5">
-        <div class="col-lg-5 col-md-6 col-sm-12">
-          <img src="assets/img/feature1.jpg" class="img-fluid w-100 pb-1" alt="" />
+        <div class="col-lg-5 col-md-6 col-sm-12 container-fluid">
+          <img src="assets/img/shoes4.jpg" class="img-fluid w-100 pb-1" alt="" />
           <div class="samll-img-group">
-            <div class="small-img-col">
+            <div class="small-img-col d-inline-block" style="flex-basis: 24%; cursor: pointer">
+              <img src="assets/img/featured-3.jpg" class="small-img" alt="" />
+            </div>
+            <div class="small-img-col d-inline-block">
+              <img src="assets/img/watch1.jpg" class="small-img" alt="" />
+            </div>
+            <div class="small-img-col d-inline-block">
               <img src="assets/img/featured-3.jpg" width="100%" class="small-img" alt="" />
             </div>
-            <div class="small-img-col">
-              <img src="assets/img/featured-3.jpg" width="100%" class="small-img" alt="" />
-            </div>
-            <div class="small-img-col">
-              <img src="assets/img/featured-3.jpg" width="100%" class="small-img" alt="" />
-            </div>
-            <div class="small-img-col">
-              <img src="assets/img/featured-3.jpg" width="100%" class="small-img" alt="" />
+            <div class="small-img-col d-inline-block">
+              <img src="assets/img/men-jacket.jpg" width="100%" class="small-img" alt="" />
             </div>
           </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-12">
+          <h6>Men/Shoes</h6>
+          <h3 class="py-4">Men's Fashion</h3>
+          <h2>$166.00</h2>
+          <input type="number" value="1" />
+          <button class="buy-btn">Add to cart</button>
+          <h4 class="mt-5 mb-5">Products details</h4>
+          <p>
+            The details of this product will be displayed shortly.The details of this product will
+            be displayed shortlyThe details of this product will be displayed shortly
+          </p>
         </div>
       </div>
     </section>
