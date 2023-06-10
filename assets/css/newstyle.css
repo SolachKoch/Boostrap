@@ -267,17 +267,24 @@ h1 {
   font-weight: bold;
 }
 /* Page shop start  */
-.pagination li a {
-  color: coral;
+/* Login */
+#login-form {
+  width: 50%;
+  margin: 5px auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #fb774b;
 }
-.pagination li a:hover {
+#login-form input{
+  width: 50%;
+  margin: 5px auto;
+}
+#login-form #login-btn{
+  background-color: #fb774b;
   color: #fff;
-  background-color: coral;
+
 }
-.small-img-group {
-  display: flex;
-  justify-content: space-between;
-}
-.single-product .buy-btn:hover {
-  background-color: #000;
+#login-form #register-url{
+  color: #fff;
+  
 }
