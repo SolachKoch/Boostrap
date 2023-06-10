@@ -58,8 +58,55 @@
     .cart td img {
       width: 80px;
       height: 80px;
-      margin-left: 10px;
+      margin-right: 10px;
       background-color: red;
+    }
+    .cart td input {
+      width: 40px;
+      height: 30px;
+      padding: 5px;
+    }
+    .cart td a {
+      color: orange;
+    }
+    .cart .remove-btn {
+      color: #fb774b;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    .cart .edit-btn {
+      color: #fb774b;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .cart .product-info p {
+      margin: 3px;
+    }
+    .cart-total {
+      display: flex;
+      justify-content: flex-end;
+    }
+    .cart-total table {
+      width: 100%;
+      max-width: 500px;
+      border-top: 5px solid #fb774b;
+    }
+    td:last-child {
+      text-align: right;
+    }
+    th:last-child {
+      text-align: right;
+    }
+    .checkout-container{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .checkout-btn {
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      background-color: #fb774b;
     }
   </style>
   <body>
@@ -120,7 +167,47 @@
                 <div>
                   <p>white shoes</p>
                   <small><span>$</span>155</small><br />
-                  <div class="remove-btn"></div>
+                  <div class="remove-btn">Remove</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input type="number" value="1" />
+              <a class="edit-btn">Edit</a>
+            </td>
+            <td>
+              <span>$</span>
+              <span class="product-price">155</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-info">
+                <img src="assets/img/feature1.jpg" />
+                <div>
+                  <p>white shoes</p>
+                  <small><span>$</span>155</small><br />
+                  <div class="remove-btn">Remove</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              <input type="number" value="1" />
+              <a class="edit-btn">Edit</a>
+            </td>
+            <td>
+              <span>$</span>
+              <span class="product-price">155</span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="product-info">
+                <img src="assets/img/feature1.jpg" />
+                <div>
+                  <p>white shoes</p>
+                  <small><span>$</span>155</small><br />
+                  <div class="remove-btn">Remove</div>
                 </div>
               </div>
             </td>
@@ -134,6 +221,21 @@
             </td>
           </tr>
         </table>
+        <div class="cart-total">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>$155</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$155</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="checkout-container ">
+        <button class="btn checkout-btn">checkout</button>
       </div>
     </div>
     <!-- Cart start -->
